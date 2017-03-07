@@ -1,0 +1,90 @@
+@import "partials/variable";
+@import "partials/mixins";
+
+body {
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, li {
+  margin: 0;
+  padding: 0;
+  color: $text-color;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+button {
+  @include button;
+}
+
+
+header {
+  background-color: $primary;
+  padding: 10px 0;
+
+  ul {
+    width: 960px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+
+    li {
+      display: inline-block;
+      text-transform: uppercase;
+
+      a {
+        text-decoration: none;
+        color: $text-color;
+        font-size: .7rem;
+      }
+      a:hover {
+        color: orange;
+        padding-bottom: 10px;
+        border-bottom: 1px solid black;
+      }
+    }
+  }
+}
+
+.hero {
+
+  background-image: url(../images/pencil.jpg);
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .hero-text{
+    text-align: center;
+
+    button:hover {
+      @include buttonHover;
+    }
+  }
+}
+
+.banner {
+  background-color: $secondary;
+
+  .banner-text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+
+    button:hover {
+      @include buttonHover2;
+    }
+  }
+}

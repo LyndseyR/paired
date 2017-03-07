@@ -1,0 +1,73 @@
+body {
+  font-size: 16px; }
+
+h1, h2, h3, h4, h5, h6, p, a, ul, li {
+  margin: 0;
+  padding: 0;
+  color: #3c4242; }
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 500; }
+
+h3 {
+  text-transform: uppercase;
+  font-weight: 300; }
+
+button {
+  text-transform: uppercase;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 15px;
+  background-color: transparent;
+  color: white;
+  font-size: .8rem; }
+
+header {
+  background-color: #94b4b3;
+  padding: 10px 0; }
+  header ul {
+    width: 960px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto; }
+    header ul li {
+      display: inline-block;
+      text-transform: uppercase; }
+      header ul li a {
+        text-decoration: none;
+        color: #3c4242;
+        font-size: .7rem; }
+      header ul li a:hover {
+        color: orange;
+        padding-bottom: 10px;
+        border-bottom: 1px solid black; }
+
+.hero {
+  background-image: url(../images/pencil.jpg);
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .hero .hero-text {
+    text-align: center; }
+    .hero .hero-text button:hover {
+      background-color: #d3795f;
+      border: 1px solid #d3795f; }
+
+.banner {
+  background-color: #d3795f; }
+  .banner .banner-text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px; }
+    .banner .banner-text button:hover {
+      background-color: #3c4242;
+      border: 1px solid #3c4242; }
+
+/*# sourceMappingURL=style.css.map */

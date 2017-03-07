@@ -1,0 +1,22 @@
+// Buttons
+
+@mixin button {
+  text-transform: uppercase;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 15px;
+  background-color: transparent;
+  color: white;
+  font-size: .8rem;
+}
+
+@mixin buttonHover {
+  background-color: $secondary;
+  border: 1px solid $secondary;
+}
+
+@mixin buttonHover2 {
+  background-color: $text-color;
+  border: 1px solid $text-color;
+}
